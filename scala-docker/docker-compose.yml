@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  scala-docker-starter:
+    build: .
+    image: scala-docker-starter
+    container_name: scala-docker-starter
