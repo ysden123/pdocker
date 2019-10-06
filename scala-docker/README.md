@@ -3,6 +3,11 @@ Scala docker starter
 
 # Build
 
+## Create jar
+
+```shell script
+sbt assembly
+```
 ## Create container
 ```shell script
 docker build -t scala-docker-starter .
@@ -12,4 +17,10 @@ docker build -t scala-docker-starter .
 
 ```shell script
 docker run -t --name scala-docker-starter scala-docker-starter
+```
+
+or 
+
+```shell script
+docker-compose up
 ```
