@@ -10,13 +10,13 @@ sbt assembly
 ```
 ## Create container
 ```shell script
-docker build -t scala-docker-starter .
+docker build -t ysden123/scala-docker-starter .
 ```
 
 # How to run
 
 ```shell script
-docker run -t --name scala-docker-starter scala-docker-starter
+docker run -t --name ysden123/scala-docker-starter scala-docker-starter
 ```
 
 or 

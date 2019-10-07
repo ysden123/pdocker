@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  scala-http-server:
+    build: .
+    image: ysden123/scala-http-server
+    container_name: scala-http-server
+    ports:
+      - "8080:8080"
