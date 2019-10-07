@@ -34,6 +34,7 @@ object Main extends App {
 
 class Handler extends HttpHandler {
   override def handle(exchange: HttpExchange): Unit = {
+    println("==>handle")
     val response = "Hello from Docker HTTP server!"
     exchange.sendResponseHeaders(200, response.length)
     val outputStream = exchange.getResponseBody
