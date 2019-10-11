@@ -1,2 +1,0 @@
-# pdocker
-Playing with Docker

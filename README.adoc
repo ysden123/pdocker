@@ -1,0 +1,24 @@
+= pdocker
+
+Playing with Docker
+
+== java-docker
+Starter for an application on Java.
+
+See link:java-docker/README.adoc[java-docker]
+
+== kafka-docker
+A docker with Kafka.
+
+See link:kafka-docker/README.adoc[kafka-docker]
+
+== scala-docker
+Scala docker starter.
+
+See link:scala-docker/README.adoc[scala-docker]
+
+== scala-http-server
+Scala HTTP server docker starter.
+
+see link:scala-http-server/README.adoc[scala-http-server]
+

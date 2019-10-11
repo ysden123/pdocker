@@ -1,0 +1,34 @@
+= scala-docker
+
+Scala docker starter
+
+= Build
+
+== Create jar
+
+[source,shell script]
+----
+sbt assembly
+
+----
+
+== Create container
+
+[source,shell script]
+----
+docker build -t ysden123/scala-docker-starter .
+----
+
+= How to run
+
+[source,shell script]
+----
+docker run -t --name ysden123/scala-docker-starter scala-docker-starter
+----
+
+or 
+
+[source,shell script]
+----
+docker-compose up
+----
