@@ -2,6 +2,11 @@
 
 Playing with Docker
 
+== ext-conf
+Demonstrates how to pass environment variables to docker instance.
+
+See link:ext-conf/README.adoc[ext-conf]
+
 == java-docker
 Starter for an application on Java.
 

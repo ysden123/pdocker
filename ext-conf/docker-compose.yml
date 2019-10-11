@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  ext-conf:
+    build: .
+    image: ysden123/ext-conf
+    container_name: ext-conf
+    env_file:
+      - env.txt
