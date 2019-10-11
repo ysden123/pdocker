@@ -1,0 +1,52 @@
+= ext-conf
+
+Demonstrates usage of a docker with partly external configuration
+
+== Build
+
+=== Create jar and all necessary jar files
+
+[source,shell script]
+----
+sbt stage
+----
+
+Result is in _target/universal/stage_
+They are folders:
+
+- bin - scripts
+- lib - jar files.
+
+=== Create docker image
+
+[source,shell script]
+----
+docker build --rm -t ysden123/ext-conf .
+----
+
+== How to run
+
+Run command (default value of _test.param1_):
+[source,shell script]
+----
+docker run --rm -i ysden123/ext-conf
+----
+
+Run command (specified value of _test.param1_):
+[source,shell script]
+----
+docker run --rm -i -e TEST_PARAM1="Kuku re ku!" ysden123/ext-conf
+----
+
+Run command (specified file with environment values):
+[source,shell script]
+----
+docker run --rm -i --env-file ./env.txt  ysden123/ext-conf
+----
+
+=== How to build and to run
+Run command:
+[source,shell script]
+----
+docker-compose up
+----

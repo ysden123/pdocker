@@ -1,0 +1,27 @@
+= scala-http-server
+
+Scala HTTP server
+
+= Build
+
+== Create jar
+
+[source,shell script]
+----
+sbt assembly
+
+----
+
+== Create container
+
+[source,shell script]
+----
+docker build -t ysden123/scala-http-server .
+----
+
+= How to build and to run
+
+[source,shell script]
+----
+docker-compose up
+----
