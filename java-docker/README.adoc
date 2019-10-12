@@ -4,7 +4,7 @@ Java docker
 
 == How to build
 
-. Download RPM with JRE and put under /StulSoft/kafka-docker fromhttp://www.oracle.com/technetwork/java/javase/downloads/index.html[Oracle Java Downloads]
+. Download RPM with JRE and put under /StulSoft/java-docker from http://www.oracle.com/technetwork/java/javase/downloads/index.html[Oracle Java Downloads]
 . Update Dockerfile if new version will be used
 . Login to your docker
 . cd /StulSoft/java-docker
