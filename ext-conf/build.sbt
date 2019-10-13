@@ -35,6 +35,7 @@ resolvers += Resolver.jcenterRepo
 lazy val root = (project in file("."))
   .settings(commonSettings: _*)
   .settings(
-    name := projectName
+    name := projectName,
+    mainClass in Compile := Some("com.stulsoft.pdocker.ext.conf.Main")
   )
   .enablePlugins(JavaAppPackaging)
