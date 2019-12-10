@@ -1,0 +1,32 @@
+= ext-conf
+
+Demonstrates usage of a docker with external application configuration
+
+== Build
+
+=== Create jar and all necessary jar files
+
+[source,shell script]
+----
+sbt stage
+----
+
+Result is in _target/universal/stage_
+They are folders:
+
+- bin - scripts
+- lib - jar files.
+
+=== Create docker image
+
+[source,shell script]
+----
+docker build --rm -t ysden123/ext-typesafe-conf .
+----
+
+== How to run
+Run command:
+[source,shell script]
+----
+docker-compose up
+----

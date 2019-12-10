@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  ext-typesafe-conf:
+    build: .
+    image: ysden123/ext-typesafe-conf
+    container_name: ext-typesafe-conf
+    volumes:
+#      Format:
+#      - <path to repository on real machine>:/usr/apps/ext-typesafe-conf/
+#      Example:
+      - ./application.conf:/usr/apps/ext-typesafe-conf/application.conf
